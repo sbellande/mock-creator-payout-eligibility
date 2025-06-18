@@ -1,80 +1,61 @@
-# 🎮 Mock Creator Payout Eligibility Tracker
+# Mock Creator Payout Eligibility Tracker
 
-This project simulates payout eligibility for content creators on a Twitch-like platform. It was inspired by Twitch’s monetization structure and built to explore how changes in payout rules can impact which creators qualify for earnings.
+This project explores how payout eligibility rules might impact creators on a platform like Twitch. I created a mock dataset with user metrics such as monthly views, revenue, account age, and country. Then, I used Python and pandas to simulate payout eligibility based on configurable thresholds (e.g. 1,000 views and $50 monthly revenue).
 
-As someone transitioning from financial operations into data science, I designed this project to strengthen my skills in SQL, Python, and causal reasoning — while keeping it relevant to real-world policy and product decisions.
-
----
-
-## 💡 Project Goals
-
-- Analyze mock creator data and simulate payout eligibility rules.
-- Use SQL to filter eligible creators based on specific thresholds (views, country, earnings).
-- Use Python (pandas & matplotlib) to clean data, explore trends, and visualize payout patterns.
-- Reflect on how changes to eligibility rules affect different types of creators — supporting causal reasoning and impact measurement.
+The goal was to practice SQL-style logic, data cleaning, and exploratory analysis while analyzing the potential effects of monetization policies across different creator segments.
 
 ---
 
-## 🧰 Tools Used
+## Project Objectives
 
-- **SQL** (via pandas filtering): query mock data for eligibility logic
-- **Python**: data analysis and cleaning with pandas
-- **Matplotlib / Seaborn**: visualizing payout distributions
-- **Excel** (optional): initial data review and charts
-
----
-
-## 📁 Dataset
-
-The dataset is synthetic and includes:
-- `creator_id`
-- `country`
-- `monthly_views`
-- `monthly_revenue` (in USD)
-- `account_age_months`
-- `payouts_received`
-
-Eligibility baseline:  
-Creators must have **at least 1,000 monthly views** and **$50 in revenue** to qualify for a payout. These thresholds are adjustable for testing.
+- Apply SQL-style filtering using pandas to determine eligibility logic
+- Visualize payout trends and creator patterns using matplotlib
+- Explore how changes in thresholds affect different user groups
+- Practice data storytelling through clear summary outputs and charts
 
 ---
 
-## 📊 Key Questions
+## Dataset Overview
 
-- How many creators qualify under current rules?
-- How does eligibility change when adjusting thresholds?
-- Do certain countries or account ages correlate with payout patterns?
-- What trade-offs might a policy team face when revising payout eligibility?
-
----
-
-## 📸 Sample Visuals
-
-![Eligibility by Country](eligibility_by_country.png)
+- 200 synthetic creator profiles
+- Fields include: creator ID, country, monthly views, monthly revenue, account age (months), and payouts received
+- Simulated for flexibility in testing eligibility rules
 
 ---
 
-## 📝 What I’ve Learned (So Far)
+## Key Questions
 
-- Practicing SQL helped me understand how to build layered conditions and filter efficiently.
-- Using pandas made it easier to slice data and experiment with “what-if” scenarios.
-- Visualizing results helped me better communicate the implications of eligibility rule changes — which is key for working across product, legal, and finance teams.
-
----
-
-## 🔄 Next Steps
-
-- Incorporate more payout timing features to simulate delays or bonuses.
-- Build a basic dashboard using Streamlit or Looker Studio.
-- Test edge cases for low-income, high-view creators.
+- How many creators qualify under a 1,000 views / $50 revenue policy?
+- Which countries have the most or fewest eligible creators?
+- What trade-offs exist when raising or lowering payout thresholds?
 
 ---
 
-## 🚀 Why This Matters
+## Tools and Skills Used
 
-Platforms like Twitch constantly refine their payout systems. This project explores how a data scientist might evaluate those changes — not just technically, but strategically. It ties into policy evaluation, monetization equity, and creator satisfaction — which are all part of the bigger picture at Twitch.
+- Python (pandas, numpy)
+- Matplotlib (visualizations)
+- Jupyter Notebooks
+- Data filtering and rule-based logic
+- Exploratory Data Analysis (EDA)
+- Basic scenario testing for policy impact
+- Version control and GitHub documentation
 
 ---
 
-🌱 Thanks for checking this out!  
+## Why I Chose This Project
+
+As someone transitioning into data science from financial operations, I wanted to simulate a use case that blends product policy, user behavior, and payout mechanics. This project helped me practice core technical skills—like data wrangling and visualization—while thinking critically about real-world creator platforms.
+
+---
+
+## Files
+
+- `mock_creator_payout_data.csv` – the full synthetic dataset
+- `mock_creator_payout_tracker.ipynb` – notebook with code and analysis
+- `eligibility_by_country.png` – chart of eligible creators by country
+
+---
+
+Thanks for checking this out! More improvements coming soon as I expand on this idea.
 You can explore more of my learning journey in the [main portfolio](https://github.com/sbellande).
